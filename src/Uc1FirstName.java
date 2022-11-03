@@ -13,5 +13,14 @@ public class Uc1FirstName {
         else {
             System.out.println("Entered name is not valid");
         }
+        System.out.println("Please enter last name:");
+        String LastName = sc.next();
+        boolean check1 = LastName.matches(RegEx);
+        if(check1) {
+            System.out.println("Entered name is valid");
+        }
+        else {
+            System.out.println("Entered name is not valid");
+        }
     }
 }
