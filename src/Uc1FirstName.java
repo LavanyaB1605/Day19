@@ -22,5 +22,14 @@ public class Uc1FirstName {
         else {
             System.out.println("Entered name is not valid");
         }
+        System.out.println("Please enter Email Id:");
+        String Email = sc.next();
+        boolean check2 = Email.matches(RegEx);
+        if(check1) {
+            System.out.println("Entered ID is valid");
+        }
+        else {
+            System.out.println("Entered ID is not valid");
+        }
     }
 }
