@@ -36,10 +36,20 @@ public class Uc1FirstName {
         }
        System.out.println("Please enter Phone Number:");
         String num = sc.nextLine();
-        //String RegEx2 = "[91]{2} [6-9]{1}[0-9]{9}";
         String RegEx2 = "[91]{2} [6-9]{1}[0-9]{9}";
         Pattern pattern = Pattern.compile(RegEx2);
         Matcher matcher = pattern.matcher(num);
         System.out.println(num +" : "+ matcher.matches());
+
+        System.out.println("Please enter password Id:");
+        String pwd = sc.nextLine();
+        String RegEx3 = "[A-Za-z0-9]{7,}[$&+,:;=?@#|'<>.-^*()%!]";
+        boolean check3 = pwd.matches(RegEx3);
+        if(check2) {
+            System.out.println("Entered Password is valid");
+        }
+        else {
+            System.out.println("Entered Password is not valid");
+        }
     }
 }
